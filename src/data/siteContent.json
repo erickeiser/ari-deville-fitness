@@ -4,7 +4,7 @@
     "ctaText": "Start Your Journey",
     "secondaryCtaText": "Learn More",
     "heroMediaType": "video",
-    "heroVideo": "https://fmyoxwcnsnsifusdmsnj.supabase.co/storage/v1/object/public/media/1751248750671_aaron%20gym%20shoot%20final%20topaz.mov",
+    "heroVideo": "https://your-project.supabase.co/storage/v1/object/public/media/1751248750671_aaron%20gym%20shoot%20final%20topaz.mov",
     "subtitle": "Professional personal training with proven results. ",
     "title": "Transform Your Body, Transform Your Life"
   },
@@ -23,6 +23,6 @@
     "phone": "(832)438-0005"
   },
   "deployment": {
-    "webhookUrl": "https://api.netlify.com/build_hooks/6862e296ed6dd8c27a5fc04e"
+    "webhookUrl": "your_github_token"
   }
 }
