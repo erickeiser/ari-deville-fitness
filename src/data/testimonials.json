@@ -1,20 +1,5 @@
 [
   {
-    "id": "1",
-    "name": "Sarah Chen",
-    "title": "Marketing Manager",
-    "image": "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=400",
-    "videoThumb": "https://images.pexels.com/photos/4761792/pexels-photo-4761792.jpeg?auto=compress&cs=tinysrgb&w=600",
-    "videoUrl": null,
-    "quote": "Lost 30 pounds in 4 months while building the strongest I've ever been. Alex's approach is sustainable and actually enjoyable!",
-    "rating": 5,
-    "results": "Lost 30 lbs | Gained Confidence",
-    "featured": true,
-    "active": true,
-    "createdAt": "2025-06-30T00:37:54.113564+00:00",
-    "updatedAt": "2025-06-30T00:37:54.113564+00:00"
-  },
-  {
     "id": "2",
     "name": "Michael Rodriguez",
     "title": "Software Engineer",
