@@ -1,0 +1,28 @@
+{
+  "hero": {
+    "heroImage": "https://images.pexels.com/photos/1431282/pexels-photo-1431282.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "ctaText": "Start Your Journey",
+    "secondaryCtaText": "Learn More",
+    "heroMediaType": "video",
+    "heroVideo": "https://fmyoxwcnsnsifusdmsnj.supabase.co/storage/v1/object/public/media/1751248750671_aaron%20gym%20shoot%20final%20topaz.mov",
+    "subtitle": "Professional personal training with proven results. ",
+    "title": "Transform Your Body, Transform Your Life"
+  },
+  "about": {
+    "title": "Meet Your Dedicated Fitness Partner",
+    "description": "Hi, I'm Alex Johnson, a certified personal trainer with over 5 years of experience helping people transform their lives through fitness. My journey began when I overcame my own health challenges, and now I'm passionate about guiding others on their path to wellness.",
+    "trainerImage": "https://images.pexels.com/photos/1552252/pexels-photo-1552252.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "trainerName": "Alex Johnson",
+    "experience": "5+"
+  },
+  "contact": {
+    "address": "Downtown Fitness Center",
+    "addressLine2": "123 Main Street, City State 12345",
+    "hours": "Monday - Friday: 6:00 AM - 8:00 PM\\nSaturday: 7:00 AM - 6:00 PM\\nSunday: 8:00 AM - 4:00 PM",
+    "email": "aarondeville@yahoo.com",
+    "phone": "(832)438-0005"
+  },
+  "deployment": {
+    "webhookUrl": "https://api.netlify.com/build_hooks/6862e296ed6dd8c27a5fc04e"
+  }
+}
