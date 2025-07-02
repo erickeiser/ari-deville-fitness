@@ -12,8 +12,8 @@
     "title": "Meet Your Dedicated Fitness Partner",
     "description": "Hi, I'm Alex Johnson, a certified personal trainer with over 5 years of experience helping people transform their lives through fitness. My journey began when I overcame my own health challenges, and now I'm passionate about guiding others on their path to wellness.",
     "trainerImage": "https://images.pexels.com/photos/1552252/pexels-photo-1552252.jpeg?auto=compress&cs=tinysrgb&w=800",
-    "trainerName": "Ari Deville",
-    "experience": "5+"
+    "experience": "5+",
+    "trainerName": "Ari Deville"
   },
   "contact": {
     "address": "Downtown Fitness Center",
