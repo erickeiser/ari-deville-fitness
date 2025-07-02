@@ -1,9 +1,10 @@
 import React from 'react';
+import { useCMS } from '../../contexts/CMSContext';
 import { Play, Quote, Star } from 'lucide-react';
-import testimonialsData from '../data/testimonials.json';
 
 const PublicTestimonials = () => {
-  const testimonials = testimonialsData.filter(testimonial => testimonial.active);
+  const { testimonials } = useCMS();
+  const activeTestimonials = testimonials.filter(testimonial => testimonial.active);
 
   return (
     <section id="videos" className="py-20 bg-white">
@@ -18,7 +19,7 @@ const PublicTestimonials = () => {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-16">
-          {testimonials.map((testimonial) => (
+          {activeTestimonials.map((testimonial) => (
             <div key={testimonial.id} className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
               <div className="relative group cursor-pointer">
                 <img
@@ -92,7 +93,7 @@ const PublicTestimonials = () => {
             </div>
             <div className="text-center">
               <img
-                src="https://images.pexels.com/photos/4162449/pexels-photo-4162449.jpeg"
+                src="https://images.pexels.com/photos/4162449/pexels-photo-4162449.jpeg?auto=compress&cs=tinysrgb&w=600"
                 alt="Success transformation"
                 className="w-full rounded-xl shadow-lg mb-6"
               />

@@ -1,17 +1,17 @@
 import React from 'react';
+import { useCMS } from '../contexts/CMSContext';
 import { ArrowRight, Star, Award, Users } from 'lucide-react';
-import siteContentData from '../data/siteContent.json';
 
 const Hero = () => {
-  const heroContent = siteContentData.hero || {};
+  const { getSiteContent } = useCMS();
 
-  const heroTitle = heroContent.title || 'Transform Your Body, Transform Your Life';
-  const heroSubtitle = heroContent.subtitle || 'Professional personal training with proven results. I help busy professionals achieve their fitness goals through personalized workout plans, nutrition guidance, and unwavering support.';
-  const heroImage = heroContent.heroImage || 'https://images.pexels.com/photos/1431282/pexels-photo-1431282.jpeg';
-  const heroVideo = heroContent.heroVideo || '';
-  const heroMediaType = heroContent.heroMediaType || 'image';
-  const ctaText = heroContent.ctaText || 'Start Your Journey';
-  const secondaryCtaText = heroContent.secondaryCtaText || 'Learn More';
+  const heroTitle = getSiteContent('hero', 'title') || 'Transform Your Body, Transform Your Life';
+  const heroSubtitle = getSiteContent('hero', 'subtitle') || 'Professional personal training with proven results. I help busy professionals achieve their fitness goals through personalized workout plans, nutrition guidance, and unwavering support.';
+  const heroImage = getSiteContent('hero', 'heroImage') || 'https://images.pexels.com/photos/1431282/pexels-photo-1431282.jpeg?auto=compress&cs=tinysrgb&w=800';
+  const heroVideo = getSiteContent('hero', 'heroVideo') || '';
+  const heroMediaType = getSiteContent('hero', 'heroMediaType') || 'image';
+  const ctaText = getSiteContent('hero', 'ctaText') || 'Start Your Journey';
+  const secondaryCtaText = getSiteContent('hero', 'secondaryCtaText') || 'Learn More';
 
   return (
     <section id="home" className="pt-16 bg-gradient-to-br from-slate-50 to-astros-orange/10 min-h-screen flex items-center">

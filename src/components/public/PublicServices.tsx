@@ -1,6 +1,6 @@
 import React from 'react';
+import { useCMS } from '../../contexts/CMSContext';
 import { User, Users, Video, Utensils, Clock, CheckCircle } from 'lucide-react';
-import servicesData from '../data/services.json';
 
 const iconMap = {
   User,
@@ -11,7 +11,8 @@ const iconMap = {
 };
 
 const PublicServices = () => {
-  const services = servicesData.filter(service => service.active);
+  const { services } = useCMS();
+  const activeServices = services.filter(service => service.active);
 
   return (
     <section id="services" className="py-20 bg-slate-50">
@@ -26,7 +27,7 @@ const PublicServices = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {services.map((service, index) => {
+          {activeServices.map((service, index) => {
             const IconComponent = iconMap[service.icon as keyof typeof iconMap] || User;
             
             return (
